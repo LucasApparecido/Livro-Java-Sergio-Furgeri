@@ -1,25 +1,14 @@
-package exerciciosCap2;
+/*
+Usando a classe BufferedReader para entrada de dados, crie uma classe que receba o valor de um
+produto e a porcentagem de desconto, calcule e mostre o valor do desconto e o valor do produto
+com o desconto. Observação: o valor do desconto é calculado por meio da fórmula: valor do desconto = valor do produto * percentual de desconto / 100.
+*/
+
 import javax.swing.JOptionPane;
 
 public class Exercicio0201 {
-  public static void main(String args[]) {
-    String aux = " ";
-    float nota1 = 0, nota2 = 0, trabalho = 0, media = 0;
-    try {
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota 1: ");
-      nota1 = Float.parseFloat(aux);
-
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota 2: ");
-      nota2 = Float.parseFloat(aux);
-
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota do trabalho: ");
-      trabalho = Float.parseFloat(aux);
-
-      media = (nota1 + nota2 + trabalho) / 3;
-      JOptionPane.showMessageDialog(null, "Media: " + media);
-    } catch (NumberFormatException erro) {
-      System.out.println("Erro na conversao, digite apenas caracteres numericos");
-    }
-    System.exit(0);
+  public static void main(String args[]) 
+  {
+    
   }
 }

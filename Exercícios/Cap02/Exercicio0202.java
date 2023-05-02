@@ -1,24 +1,18 @@
+/*
+Usando a classe Scanner para entrada de dados, faça uma classe que receba dois valores inteiros.
+O primeiro valor corresponde à quantidade de pontos do líder do campeonato brasileiro de futebol. 
+O segundo valor corresponde à quantidade de pontos do time lanterna. 
+Considerando que cada vitória vale 3 pontos, elabore uma classe que calcule o número de vitórias necessárias para
+que o time lanterna alcance (ou ultrapasse) o líder. 
+Por exemplo, supondo que as quantidades de ponto fornecidas sejam 40 e 22, 
+então o número de vitórias apresentada na saída deverá ser 6, pois (40-22) / 3 = 6.
+*/
+
 import javax.swing.JOptionPane;
 
-public class Exemplo0208 {
-  public static void main(String args[]) {
-    String aux = " ";
-    float nota1 = 0, nota2 = 0, trabalho = 0, media = 0;
-    try {
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota 1: ");
-      nota1 = Float.parseFloat(aux);
+public class Exercicio0202 {
+  public static void main(String args[]) 
+  {
 
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota 2: ");
-      nota2 = Float.parseFloat(aux);
-
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota do trabalho: ");
-      trabalho = Float.parseFloat(aux);
-
-      media = (nota1 + nota2 + trabalho) / 3;
-      JOptionPane.showMessageDialog(null, "Media: " + media);
-    } catch (NumberFormatException erro) {
-      System.out.println("Erro na conversao, digite apenas caracteres numericos");
-    }
-    System.exit(0);
   }
 }

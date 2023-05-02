@@ -1,24 +1,16 @@
+/*
+Considere a seguinte informação a respeito do cálculo da aposentadoria. 
+Para se aposentar por idade, as mulheres precisam ter atingido 60 anos de idade e os homens, 65. 
+Já na aposentadoria por tempo de contribuição, o tempo mínimo exigido é de 30 anos para as mulheres e de 35 anos para os homens. 
+Com base nessas informações, elabore uma classe que receba a idade de uma pessoa, seu sexo e a quantidade de anos de contribuição. 
+A seguir, calcule a quantidade de anos que falta de contribuição para se aposentar, ou então emita a mensagem: “você já tem o direito a aposentadoria”.
+*/
+
 import javax.swing.JOptionPane;
 
-public class Exemplo0208 {
-  public static void main(String args[]) {
-    String aux = " ";
-    float nota1 = 0, nota2 = 0, trabalho = 0, media = 0;
-    try {
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota 1: ");
-      nota1 = Float.parseFloat(aux);
+public class Exercicio0205 {
+  public static void main(String args[]) 
+  {
 
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota 2: ");
-      nota2 = Float.parseFloat(aux);
-
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota do trabalho: ");
-      trabalho = Float.parseFloat(aux);
-
-      media = (nota1 + nota2 + trabalho) / 3;
-      JOptionPane.showMessageDialog(null, "Media: " + media);
-    } catch (NumberFormatException erro) {
-      System.out.println("Erro na conversao, digite apenas caracteres numericos");
-    }
-    System.exit(0);
   }
 }

@@ -1,24 +1,17 @@
+/*
+O Imposto sobre a Transmissão de Bens Móveis (ITBI) é aplicado sobre o valor de um imóvel a
+ser negociado. A base de cálculo do ITBI (o valor a ser considerado no cálculo) será o maior valor entre o valor de transação (o valor negociado) e o valor venal de referência (fornecido pela
+Prefeitura). Com base nisso, elabore uma classe que receba o valor da transação, o valor venal e
+o percentual de imposto. Após isso, encontre o maior valor e aplique o percentual sobre ele. Ao
+final, apresente o valor do imposto a ser pago. Observação: o valor do imposto a ser pago é calculado por meio da fórmula: valor do imposto = maior valor * percentual / 100. Para entrada e saída
+de dados utilize a classe JOptionPane.
+*/
+
 import javax.swing.JOptionPane;
 
-public class Exemplo0208 {
-  public static void main(String args[]) {
-    String aux = " ";
-    float nota1 = 0, nota2 = 0, trabalho = 0, media = 0;
-    try {
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota 1: ");
-      nota1 = Float.parseFloat(aux);
+public class Exercicio0203 {
+  public static void main(String args[]) 
+  {
 
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota 2: ");
-      nota2 = Float.parseFloat(aux);
-
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota do trabalho: ");
-      trabalho = Float.parseFloat(aux);
-
-      media = (nota1 + nota2 + trabalho) / 3;
-      JOptionPane.showMessageDialog(null, "Media: " + media);
-    } catch (NumberFormatException erro) {
-      System.out.println("Erro na conversao, digite apenas caracteres numericos");
-    }
-    System.exit(0);
   }
 }

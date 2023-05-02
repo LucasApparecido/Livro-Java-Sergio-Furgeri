@@ -1,24 +1,16 @@
+/*
+Usando a classe JOptionPane para entrada de dados, elabore uma classe que receba a nota de
+duas provas e de um trabalho. Calcule e mostre a média e o resultado final (aprovado ou reprovado). 
+Para calcular a média utilize a fórmula seguinte: média = (nota da prova 1 + nota da prova 2 + nota do trabalho) / 3. 
+Considere que a média mínima para aprovação é 6.
+*/
+
+
 import javax.swing.JOptionPane;
 
-public class Exemplo0208 {
-  public static void main(String args[]) {
-    String aux = " ";
-    float nota1 = 0, nota2 = 0, trabalho = 0, media = 0;
-    try {
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota 1: ");
-      nota1 = Float.parseFloat(aux);
+public class Exercicio0204 {
+  public static void main(String args[]) 
+  {
 
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota 2: ");
-      nota2 = Float.parseFloat(aux);
-
-      aux = JOptionPane.showInputDialog(null, "Entre com a nota do trabalho: ");
-      trabalho = Float.parseFloat(aux);
-
-      media = (nota1 + nota2 + trabalho) / 3;
-      JOptionPane.showMessageDialog(null, "Media: " + media);
-    } catch (NumberFormatException erro) {
-      System.out.println("Erro na conversao, digite apenas caracteres numericos");
-    }
-    System.exit(0);
   }
 }
